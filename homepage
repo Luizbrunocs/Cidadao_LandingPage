@@ -1,0 +1,45 @@
+import 'package:flutter/material.dart';
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Página Inicial'),
+        actions: [
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              // Aqui você pode adicionar ações para cada item do menu
+            },
+            itemBuilder: (BuildContext context) {
+              return {'Meu Cadastro', 'Alterar Senha'}.map((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Text(choice),
+                );
+              }).toList();
+            },
+          ),
+        ],
+      ),
+      body: const Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Reclamações'),
+            // Aqui você pode adicionar mais widgets para exibir as reclamações
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // Aqui você pode abrir a câmera
+        },
+        tooltip: 'Adicionar Chamado',
+        child: const Icon(Icons.add),
+      ),
+    );
+  }
+}
