@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-right">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Noticias.html">Notícias</a></li>
+                <li><a href="Politicadeuso.html">Política de uso</a></li>
+                <li><a href="login.html">Login/Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header class="page1-header image-text"
+        style="display: flex; justify-content: center; align-items: center; height: 60vh; text-align: center;">
+        <h1 style="font-weight: bold;"><strong>Cidadão Atento</strong></h1>
+    </header>
+
+    <section>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <td>
+                        <br>
+                        <p>
+                            <li>
+                                A nossa plataforma é a maneira mais rápida e eficiente de conectar cidadãos aos órgãos
+                                públicos
+                                responsáveis pela gestão da cidade. Com ela, qualquer irregularidade ou problema urbano
+                                pode
+                                ser
+                                reportado diretamente às autoridades competentes, acelerando a solução.
+                            </li>
+                            <br><br>
+                            <li>
+                                Sua cidade mais bonita e segura começa com você! Ao utilizar o Cidadão Atento, você está
+                                contribuindo para um ambiente mais saudável e organizado para todos.
+                            </li>
+                            <br><br>
+                            <li>
+                                Cadastre-se no site Cidadão Atento ou baixe o app na loja de aplicativos e faça a
+                                diferença
+                                na sua cidade!
+                                Contribua para um ambiente mais seguro, organizado e saudável, relatando problemas
+                                urbanos
+                                com
+                                facilidade. Juntos, podemos melhorar nossa cidade!
+                            </li>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="imagens/Imagem1.jpg" alt="Fotos" width="260" height="390">
+                        </p>
+                        <p style="text-align: center;">
+                            <a href="https://play.google.com/" class="custom-button">Baixe o App</a>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <div class="title-section">
+        <h1>Cadastre e contribua com sua cidade</h1>
+    </div>
+
+    <hr>
+
+    <section style="display: flex; justify-content: space-between;">
+
+        <div style="display: inline-block; vertical-align: top; width: 48%; margin-top: 70px;">
+            <img src="imagens/Foto2.jpg" alt="Fotos" width="650" height="470">
+        </div>
+
+        <div id="cadastro" style="width: 50%;">
+            <form method="post" action="">
+                <h1>Cadastro</h1>
+
+                <p>
+                    <label for="nome_cad">Seu nome completo</label>
+                    <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+                </p>
+                <p>
+                    <label for="telefone_cad">Telefone para contato</label>
+                    <input id="telefone_cad" name="telefone_cad" required="required" type="text"
+                        placeholder="telefone" />
+                </p>
+
+                <p>
+                    <label for="email_cad">Seu e-mail</label>
+                    <input id="email_cad" name="email_cad" required="required" type="email"
+                        placeholder="contato@htmlecsspro.com" />
+                </p>
+
+                <p>
+                    <label for="senha_cad">Sua senha</label>
+                    <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234" />
+                </p>
+
+                <p>
+                    <input type="submit" value="Cadastrar" />
+                </p>
+
+                <p class="link">
+                    Já tem conta?
+                    <a href="login.html" class="button">Ir para Login</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <div id="formulario-cadastro" style="width: 50%;">
+    </div>
+
+    <div id="mensagem-sucesso" class="alert alert-success top-message" style="display: none;">
+        Cadastro realizado com sucesso!
+    </div>
+    
+    <script src="home.js"></script>
+    <hr>
+
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="https://twitter.com/?lang=pt-br" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/SUA-PAGINA-DO-FACEBOOK" target="_blank" title="Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/SUA-CONTA-DO-INSTAGRAM" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=SEU-NUMERO-DO-WHATSAPP" target="_blank" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+    <br>
+</body>
+</html>

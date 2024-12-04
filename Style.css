@@ -1,0 +1,529 @@
+/* Estilo geral do body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    height: 60%;
+    height: 800%;
+}
+
+/* Centralizar o h1 */
+header h1 {
+    text-align: center;
+    flex-grow: 1;
+    /* Faz com que o h1 ocupe o espaço disponível */
+}
+
+/* Ajustes gerais do h1 */
+h1 {
+    text-align: center;
+    color: black;
+    /* Alterar a cor do texto conforme sua preferência */
+    padding-bottom: 30px;
+}
+
+/* Remover a linha sob o h1 */
+h1:after {
+    content: none;
+    /* Remove o conteúdo após o h1 */
+}
+
+/* Estilo do nav */
+nav {
+    margin: 25px;
+    /* Adiciona espaço acima e abaixo do nav */
+    margin-left: 790px;
+    /* Adiciona espaço à esquerda do botão */
+
+}
+
+nav ul {
+    list-style: none;
+    /* Remove o marcador padrão */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    /* Permite adicionar margens */
+    margin: 0 8px;
+    /* Espaço entre os itens do menu */
+}
+
+/* Estilo dos links do menu */
+nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    /* Aplica a fonte */
+    color: #000;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove a sublinhado */
+}
+
+/* Adiciona um ponto antes de cada link */
+nav li:before {
+    content: "•";
+    /* Ponto antes do texto */
+    margin-right: 5px;
+    /* Espaço entre o ponto e o texto */
+    color: #000;
+    /* Cor do ponto */
+}
+
+/* Usar flexbox para posicionar o nav à direita e o h1 centralizado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(83, 182, 212);
+    /* Cor de fundo azul claro */
+}
+
+/* Estilo da seção principal com imagem */
+.page1-header {
+    background-image: url('imagens/Foto3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #28036d;
+
+}
+
+/* Ajustes para a página 2 */
+.page2-header {
+    background-image: url('imagens/Foto10.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #28036d;
+
+}
+
+/* Ajustes para a página 3 */
+.page3-header {
+    background-image: url('imagens/Foto8.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #28036d;
+
+}
+
+/* Ajustes para a página 4 */
+.page4-header {
+    background-image: url('imagens/Foto14.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #28036d;
+
+}
+
+/* Ajustes para a página 5 */
+.page5-header {
+    background-image: url('imagens/Foto4.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(226, 12, 12);
+    position: relative;
+    text-align: center;
+    height: 80vh;
+    /* Defina a altura do footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page5-header .content {
+    position: relative;
+    z-index: 1;
+    /* Coloca o conteúdo acima da imagem */
+    top: -80px;
+    /* Move o conteúdo 20px para cima */
+    padding-top: 10px;
+    /* Ajusta o padding superior */
+    text-align: center;
+}
+
+h5 {
+    color: #0a0a0a;
+    /* Cor azul no título */
+
+}
+
+/* Estilo da seção de conteúdo */
+.minha-section,
+h1,
+p {
+    margin-left: 10px;
+    padding: 0;
+}
+
+/* Ajuste do espaçamento entre linhas no parágrafo */
+p {
+    line-height: 2em;
+}
+
+/* Estilo dos links no rodapé */
+footer a {
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Estilo do rodapé */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    background-color: #b9b1b1;
+}
+
+/* Alterar a cor do link ao passar o mouse */
+footer a:hover {
+    color: #0077B5;
+}
+
+/* Cor do ícone do Twitter */
+footer a i.fab.fa-twitter {
+    color: #1DA1F2;
+}
+
+/* Cor do ícone do Instagram */
+footer a i.fab.fa-instagram {
+    color: #ec5151;
+}
+
+/* Cor do ícone do Facebook */
+footer a i.fab.fa-facebook {
+    color: #333;
+}
+
+/* Cor do ícone do WhatsApp */
+footer a i.fab.fa-whatsapp {
+    color: #31d468;
+}
+
+
+/* Estilo específico do formulário */
+.form-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    color: #405c60;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgba(168, 168, 168, 0.6) inset;
+    transition: all 0.2s linear;
+}
+
+/* Estilo para o botão Cadastrar */
+input[type="submit"] {
+    width: 100%;
+    cursor: pointer;
+    background: rgb(61, 157, 179);
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #333;
+    transition: all 0.2s linear;
+}
+
+/* Estilo para o botão Sair */
+input[type="button"] {
+    width: 100%;
+    cursor: pointer;
+    background: rgb(61, 157, 179);
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #333;
+    transition: all 0.2s linear;
+}
+
+/* Efeito hover para ambos os botões */
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: rgb(45, 125, 146);
+    /* Cor do fundo ao passar o mouse */
+}
+
+/* Estilo para os botões Cadastrar, Sair e Entrar */
+input[type="submit"],
+input[type="button"],
+button {
+    width: 100%;
+    cursor: pointer;
+    background: rgb(61, 157, 179);
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-shadow: 0 1px 1px #333;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    /* Para garantir que o padding não afete a largura */
+}
+
+/* Efeito hover para todos os botões */
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover {
+    background: rgb(45, 125, 146);
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Se você estiver usando uma classe para centralizar (justify-center) */
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.top-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    z-index: 9999;
+}
+
+h3 {
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 50%;
+    /* Ajuste o percentual conforme necessário */
+    height: auto;
+    margin: 0 auto;
+    /* Centralizar a imagem */
+}
+
+/* Ajuste do estilo do carrossel */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    /* Limitar a largura do texto */
+    margin: 0 auto;
+}
+
+/* Estilo para os botões de controle */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente nos botões */
+    border-radius: 40%;
+}
+
+.carousel-item img {
+    width: 50%;
+    /* Mantém o tamanho desejado em relação à largura */
+    height: auto;
+    /* Ajusta a altura automaticamente */
+    max-height: 500px;
+    /* Define a altura máxima para padronizar as imagens */
+    margin: 0 auto;
+    /* Centraliza a imagem */
+    object-fit: cover;
+    /* Mantém a proporção da imagem e recorta o excesso, se necessário */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 30px;
+    /* Aumenta a largura do ícone */
+    height: 30px;
+    /* Aumenta a altura do ícone */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Mantém a cor de fundo dos ícones */
+    border-radius: 50%;
+    /* Mantém o formato circular */
+}
+
+/* Estilos da tabela */
+table {
+    width: 100%;
+    /* A tabela ocupa 100% da largura da página */
+    margin: 0 auto;
+    /* Centraliza a tabela */
+    border-collapse: collapse;
+    /* Remove espaçamento entre as bordas */
+}
+
+td {
+    width: 50%;
+    /* Cada coluna ocupa 50% da largura */
+    vertical-align: top;
+    /* Alinha o conteúdo ao topo */
+    padding: 20px;
+    /* Espaçamento interno nas células */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    /* Centraliza a imagem dentro da célula */
+    margin-top: 20px;
+
+}
+
+.title-section {
+    background-color: #f1f1f1;
+    /* Cor de fundo cinza */
+    padding: 20px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o conteúdo */
+}
+
+h1 {
+    margin: 0;
+    /* Remove margens para que o espaçamento seja controlado pelo padding */
+}
+
+hr {
+    border: 2px solid lightblue;
+    /* Linha azul clara */
+    width: 100%;
+}
+
+.custom-button {
+    width: 260px;
+    height: 40px;
+    background-color: #4ab3c6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tabela-com-espaco {
+    width: 80%;
+    /* A tabela vai ocupar 80% da largura da tela */
+    margin-left: 10%;
+    /* 10% de margem à esquerda */
+    margin-right: 10%;
+    /* 10% de margem à direita */
+    border-collapse: collapse;
+    /* Para garantir que as bordas da tabela não sobreponham */
+}
+
+br {
+    margin-bottom: 30px;
+    /* Adiciona o espaçamento desejado após a quebra de linha */
+}
+
+/* Imagem de fundo para a página */
+.background-image {
+    background-image: url('imagens/Imagem1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo do formulário centralizado */
+.centered-form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.centered-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #405c60;
+}
+
+/* Ajuste dos inputs e botões dentro do formulário */
+.centered-form input[type="text"],
+.centered-form input[type="file"],
+.centered-form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.centered-form button {
+    background-color: rgb(61, 157, 179);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.centered-form button:hover {
+    background-color: rgb(45, 125, 146);
+}
+
+/* Mensagem de sucesso */
+.top-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

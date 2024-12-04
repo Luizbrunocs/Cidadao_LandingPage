@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap">
+</head>
+
+<body>
+
+    <div id="cadastro" style="width: 50%; max-width: 600px; margin: 0 auto; padding: 20px;">
+
+        <form method="post" action="">
+            <h1 style="text-align: center;">Cadastro</h1>
+
+            <p>
+                <label for="nome_cad">Seu nome completo</label>
+                <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome" />
+            </p>
+            <p>
+                <label for="telefone_cad">Telefone para contato</label>
+                <input id="telefone_cad" name="telefone_cad" required="required" type="text" placeholder="Telefone" />
+            </p>
+
+            <p>
+                <label for="email_cad">Seu e-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email"
+                    placeholder="contato@exemplo.com" />
+            </p>
+
+            <p>
+                <label for="senha_cad">Sua senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234" />
+            </p>
+
+            <p>
+                <input type="submit" value="Cadastrar" />
+            </p>
+
+            <p class="link" style="text-align: center;">
+                Já tem conta?
+                <a href="login.html" class="button">Ir para Login</a>
+            </p>
+        </form>
+    </div>
+
+    <div id="mensagem-sucesso" class="alert alert-success top-message" style="display: none;">
+        Cadastro realizado com sucesso!
+    </div>
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>
